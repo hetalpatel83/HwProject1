@@ -1,0 +1,14 @@
+Feature: user want to register on abconline.com
+Scenario: user should be able to register in website by entering all mandatory field
+Given user open the browser
+And type the https://www.abconline.com/
+And user click on Home page
+When user click on register button
+And enter First Name ‘Hetal’
+And enter Last Name ‘Patel’
+And enter Email ID ‘hpatel@ab.com’
+And enter Password ‘web234’
+And Re-Enter the confirm Password ‘web234’
+And click on the Register Button
+Then user should be register successfully
+And user see message ‘your registration completed’
